@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="(여기에 이름)의 개인 소개 페이지">
+  <title>(여기에 이름) | Personal Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="topbar" aria-label="주요 메뉴">
+      <a class="wordmark" href="#top">(이름의 페이지)</a>
+      <div class="nav-links">
+        <a href="#about">소개</a>
+        <a href="#interests">관심 분야</a>
+        <a href="#contact">연락처</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="top" aria-labelledby="profile-name">
+      <p class="eyebrow">PERSONAL PROFILE <span></span> 2026</p>
+      <h1 id="profile-name">(여기에 이름)</h1>
+      <p class="subtitle">국립공주대학교 기계자동차공학부</p>
+      <p class="intro">(한 문장으로 나를 소개해 주세요.)</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
+        <a class="button button-quiet" href="https://github.com/(여기에-GitHub-아이디)" target="_blank" rel="noreferrer">GitHub 보기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="profile-grid" id="about" aria-label="프로필 정보">
+      <article class="info-block">
+        <p class="section-label">01 / ABOUT</p>
+        <h2>움직임을 이해하고,<br><em>더 나은 방향</em>을 찾습니다.</h2>
+        <p class="body-copy">(나의 전공, 배우고 있는 것, 만들고 싶은 것을 2~3문장으로 적어 주세요.)</p>
+      </article>
+
+      <article class="info-block interest-block" id="interests">
+        <p class="section-label">02 / INTERESTS</p>
+        <ul class="tag-list" aria-label="관심 분야">
+          <li>자율운항</li>
+          <li>제어</li>
+          <li>AI</li>
+        </ul>
+        <div class="course-note">
+          <span class="note-mark" aria-hidden="true">↳</span>
+          <div>
+            <p class="mini-label">CURRENTLY STUDYING</p>
+            <p class="course-name">미래첨단기술의이해 I</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="section-label">03 / SAY HELLO</p>
+        <h2 id="contact-title">함께 이야기해요.</h2>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:(여기에-이메일)" class="contact-link">
+          <span class="contact-type">EMAIL</span>
+          <span class="contact-value">(여기에 이메일)</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://github.com/(여기에-GitHub-아이디)" target="_blank" rel="noreferrer" class="contact-link">
+          <span class="contact-type">GITHUB</span>
+          <span class="contact-value">(여기에 GitHub 링크)</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 (여기에 이름)</span>
+      <span>Built for the road ahead.</span>
+    </footer>
+  </main>
+</body>
+</html>

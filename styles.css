@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #17231f;
+  --muted: #66736d;
+  --line: #d7dfd8;
+  --paper: #f4f1e8;
+  --lime: #c7ed65;
+  --blue: #b8d9f2;
+  --white: #fffdf7;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+
+.page-shell {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 84px;
+  border-bottom: 1px solid var(--line);
+}
+.wordmark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.nav-links { display: flex; gap: 28px; color: var(--muted); font-size: 13px; }
+.nav-links a:hover, .contact-link:hover, .wordmark:hover { color: #538342; }
+
+.hero { padding: clamp(84px, 14vw, 166px) 0 128px; max-width: 920px; }
+.eyebrow, .section-label, .mini-label, .contact-type {
+  margin: 0;
+  color: var(--muted);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.eyebrow { display: flex; align-items: center; gap: 12px; }
+.eyebrow span { width: 34px; height: 1px; background: var(--ink); }
+h1, h2 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.065em; line-height: 0.98; }
+h1 { margin: 26px 0 18px; font-size: clamp(64px, 12vw, 142px); font-weight: 600; }
+.subtitle { margin: 0; font-size: clamp(17px, 2vw, 21px); font-weight: 500; }
+.intro { max-width: 470px; margin: 38px 0 0; color: var(--muted); font-size: 17px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.button { display: inline-flex; align-items: center; gap: 28px; padding: 13px 16px; border: 1px solid var(--ink); font-size: 13px; font-weight: 700; transition: transform .2s ease, background .2s ease; }
+.button:hover { transform: translateY(-3px); }
+.button-primary { background: var(--ink); color: var(--white); }
+.button-primary:hover { background: #365340; }
+.button-quiet { background: transparent; }
+.button-quiet:hover { background: var(--white); }
+
+.profile-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 8%; padding: 70px 0 108px; border-top: 1px solid var(--line); }
+.section-label { margin-bottom: 28px; }
+.info-block h2 { margin: 0; font-size: clamp(36px, 5vw, 60px); font-weight: 500; }
+.info-block h2 em { color: #6c9d51; font-style: normal; }
+.body-copy { max-width: 420px; margin: 30px 0 0; color: var(--muted); }
+.interest-block { padding-top: 4px; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.tag-list li { padding: 8px 13px; border: 1px solid var(--ink); border-radius: 999px; font-size: 14px; }
+.tag-list li:nth-child(2) { background: var(--lime); }
+.tag-list li:nth-child(3) { background: var(--blue); }
+.course-note { display: flex; gap: 18px; align-items: flex-start; margin-top: 70px; padding-top: 22px; border-top: 1px solid var(--line); }
+.note-mark { color: #6c9d51; font-size: 24px; line-height: 1; }
+.mini-label { margin-bottom: 8px; font-size: 10px; }
+.course-name { margin: 0; font-size: 17px; font-weight: 500; }
+
+.contact-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 8%; padding: 74px 0 86px; background: var(--ink); color: var(--white); }
+.contact-section > div { padding-left: 0; }
+.contact-section .section-label { color: #a6b7a8; }
+.contact-section h2 { margin: 0; font-size: clamp(42px, 6vw, 76px); font-weight: 500; }
+.contact-links { align-self: end; }
+.contact-link { display: grid; grid-template-columns: 86px 1fr auto; gap: 18px; align-items: center; padding: 21px 0; border-top: 1px solid #415249; }
+.contact-link:last-child { border-bottom: 1px solid #415249; }
+.contact-type { color: #a6b7a8; font-size: 10px; }
+.contact-value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; }
+.contact-link > span:last-child { color: var(--lime); font-size: 20px; }
+.footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0 28px; color: var(--muted); font-size: 12px; }
+
+@media (max-width: 680px) {
+  .page-shell { width: min(100% - 32px, 540px); }
+  .topbar { min-height: 70px; }
+  .nav-links { gap: 14px; font-size: 12px; }
+  .nav-links a:nth-child(2) { display: none; }
+  .hero { padding: 84px 0 92px; }
+  h1 { font-size: clamp(58px, 18vw, 96px); }
+  .profile-grid, .contact-section { grid-template-columns: 1fr; gap: 62px; }
+  .profile-grid { padding: 54px 0 74px; }
+  .course-note { margin-top: 48px; }
+  .contact-section { margin: 0 -16px; padding: 58px 16px 66px; }
+  .footer { flex-direction: column; gap: 4px; }
+}
