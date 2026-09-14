@@ -4,78 +4,100 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="김태하의 개인 소개 페이지">
-  <title>김태하 | Personal Page</title>
+  <title>김태하 / FIELD NOTES</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page-shell">
-    <nav class="topbar" aria-label="주요 메뉴">
-      <a class="wordmark" href="#top">김태하의 페이지</a>
-      <div class="nav-links">
-        <a href="#about">소개</a>
-        <a href="#interests">관심 분야</a>
-        <a href="#contact">연락처</a>
+  <main class="site-frame" id="top">
+    <aside class="profile-panel">
+      <div class="panel-topline"><span class="status-dot"></span> OPEN TO NEW IDEAS</div>
+      <div class="identity-mark" aria-hidden="true">TH</div>
+      <p class="panel-kicker">FIELD NOTES / 001</p>
+      <h1>김태하</h1>
+      <p class="role">국립공주대학교<br>기계자동차공학부</p>
+      <div class="panel-bottom">
+        <p>움직임을 읽고, 시스템을 설계하고,<br>새로운 가능성을 시험합니다.</p>
+        <a class="scroll-link" href="#explore">아래로 탐색하기 <span>↓</span></a>
       </div>
-    </nav>
+    </aside>
 
-    <section class="hero" id="top" aria-labelledby="profile-name">
-      <p class="eyebrow">PERSONAL PROFILE <span></span> 2026</p>
-      <h1 id="profile-name">김태하</h1>
-      <p class="subtitle">국립공주대학교 기계자동차공학부</p>
-      <p class="intro">(한 문장으로 나를 소개해 주세요.)</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
-        <a class="button button-quiet" href="https://github.com/(여기에-GitHub-아이디)" target="_blank" rel="noreferrer">GitHub 보기 <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="profile-grid" id="about" aria-label="프로필 정보">
-      <article class="info-block">
-        <p class="section-label">01 / ABOUT</p>
-        <h2>움직임을 이해하고,<br><em>더 나은 방향</em>을 찾습니다.</h2>
-        <p class="body-copy">(나의 전공, 배우고 있는 것, 만들고 싶은 것을 2~3문장으로 적어 주세요.)</p>
-      </article>
-
-      <article class="info-block interest-block" id="interests">
-        <p class="section-label">02 / INTERESTS</p>
-        <ul class="tag-list" aria-label="관심 분야">
-          <li>자율운항</li>
-          <li>제어</li>
-          <li>AI</li>
-        </ul>
-        <div class="course-note">
-          <span class="note-mark" aria-hidden="true">↳</span>
-          <div>
-            <p class="mini-label">CURRENTLY STUDYING</p>
-            <p class="course-name">미래첨단기술의이해 I</p>
-          </div>
+    <div class="content-column">
+      <nav class="topbar" aria-label="주요 메뉴">
+        <span class="topbar-label">PROFILE / 2026</span>
+        <div class="nav-links">
+          <a href="#explore">Explore</a>
+          <a href="#contact">Contact</a>
         </div>
-      </article>
-    </section>
+      </nav>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div>
-        <p class="section-label">03 / SAY HELLO</p>
-        <h2 id="contact-title">함께 이야기해요.</h2>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:(여기에-이메일)" class="contact-link">
-          <span class="contact-type">EMAIL</span>
-          <span class="contact-value">(여기에 이메일)</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-        <a href="https://github.com/(여기에-GitHub-아이디)" target="_blank" rel="noreferrer" class="contact-link">
-          <span class="contact-type">GITHUB</span>
-          <span class="contact-value">(여기에 GitHub 링크)</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
+      <section class="intro-block" id="explore" aria-labelledby="intro-title">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <p>ABOUT THE PERSON</p>
+        </div>
+        <h2 id="intro-title">호기심을<br><span>움직이는 힘</span>으로.</h2>
+        <p class="intro-copy">(한 문장으로 나를 소개해 주세요.)</p>
+      </section>
 
-    <footer class="footer">
-      <span>© 2026 김태하</span>
-      <span>Built for the road ahead.</span>
-    </footer>
+      <section class="focus-section" id="interests" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <p id="focus-title">CURRENT FOCUS</p>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card focus-card-main">
+            <span class="card-index">A / 01</span>
+            <h3>자율운항</h3>
+            <p>스스로 판단하고 움직이는 시스템의 가능성을 탐구합니다.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="focus-card focus-card-small">
+            <span class="card-index">B / 02</span>
+            <h3>제어</h3>
+            <p>복잡한 움직임을 안정적인 흐름으로 바꿉니다.</p>
+          </article>
+          <article class="focus-card focus-card-small accent-card">
+            <span class="card-index">C / 03</span>
+            <h3>AI</h3>
+            <p>데이터에서 패턴을 발견하고 다음 행동을 상상합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="study-strip" aria-label="현재 수업">
+        <div class="study-symbol">+</div>
+        <div>
+          <p class="micro-label">NOW STUDYING</p>
+          <h2>미래첨단기술의이해 I</h2>
+        </div>
+        <span class="study-year">2026</span>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <p>LET'S CONNECT</p>
+        </div>
+        <h2 id="contact-title">아이디어가 있다면<br><span>연락해 주세요.</span></h2>
+        <div class="contact-links">
+          <a href="mailto:taeha4090@naver.com" class="contact-link">
+            <span class="contact-type">EMAIL</span>
+            <span>taeha4090@naver.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/thkim403" target="_blank" rel="noreferrer" class="contact-link">
+            <span class="contact-type">GITHUB</span>
+            <span>github.com/thkim403</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 김태하</span>
+        <span>Made with curiosity.</span>
+      </footer>
+    </div>
   </main>
 </body>
 </html>
